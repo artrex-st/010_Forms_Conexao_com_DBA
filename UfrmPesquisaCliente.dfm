@@ -1,5 +1,5 @@
-inherited frmPesquisaPadrao1: TfrmPesquisaPadrao1
-  Caption = 'frmPesquisaPadrao1'
+inherited frmPesquisaCliente: TfrmPesquisaCliente
+  Caption = 'frmPesquisaCliente'
   PixelsPerInch = 96
   TextHeight = 13
   inherited btnPesquisar: TButton

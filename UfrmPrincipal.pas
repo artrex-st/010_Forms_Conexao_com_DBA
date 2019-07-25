@@ -28,7 +28,7 @@ implementation
 
 {$R *.dfm}
 
-uses UfrmCadastroCliente, UfrmCadastroProduto;
+uses UfrmCadastroCliente, UfrmCadastroProduto, UfrmPesquisaCliente;
 
 procedure TfrmPrincipal.cliente1Click(Sender: TObject); //--------------------- Cliente
 begin

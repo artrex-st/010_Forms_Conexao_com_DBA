@@ -8,7 +8,8 @@ uses
   UfrmCadastroPadrao in 'UfrmCadastroPadrao.pas' {frmCadastroPadrao},
   UfrmCadastroProduto in 'UfrmCadastroProduto.pas' {frmCadastroProduto},
   UfrmPesquisaPadrao in 'UfrmPesquisaPadrao.pas' {frmPesquisaPadrao},
-  UfrmPesquisaCliente in 'UfrmPesquisaCliente.pas' {frmPesquisaPadrao1};
+  UfrmPesquisaCliente in 'UfrmPesquisaCliente.pas' {frmPesquisaCliente},
+  UfrmPesquisaProduto in 'UfrmPesquisaProduto.pas' {frmPesquisaProduto};
 
 {$R *.res}
 
@@ -17,7 +18,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmConexao, dmConexao);
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmPesquisaPadrao, frmPesquisaPadrao);
-  Application.CreateForm(TfrmPesquisaPadrao1, frmPesquisaPadrao1);
   Application.Run;
 end.

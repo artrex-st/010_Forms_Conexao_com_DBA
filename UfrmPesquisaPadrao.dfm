@@ -25,12 +25,12 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
   object edtPesquisa: TEdit
     Left = 72
     Top = 50
-    Width = 239
+    Width = 345
     Height = 21
     TabOrder = 0
   end
   object btnPesquisar: TButton
-    Left = 317
+    Left = 446
     Top = 46
     Width = 75
     Height = 25
@@ -40,7 +40,7 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
   object dbGrid: TDBGrid
     Left = 72
     Top = 77
-    Width = 320
+    Width = 449
     Height = 120
     DataSource = dsTabela
     TabOrder = 2
@@ -53,9 +53,8 @@ object frmPesquisaPadrao: TfrmPesquisaPadrao
   object GroupBox1: TGroupBox
     Left = 72
     Top = 207
-    Width = 320
+    Width = 449
     Height = 62
-    Caption = 'GroupBox1'
     TabOrder = 3
     object btnCancel: TButton
       Left = 97
