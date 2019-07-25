@@ -1,0 +1,79 @@
+object frmPesquisaPadrao: TfrmPesquisaPadrao
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'frmPesquisaPadrao'
+  ClientHeight = 309
+  ClientWidth = 645
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblPesquisa: TLabel
+    Left = 80
+    Top = 63
+    Width = 50
+    Height = 13
+    Caption = 'Pesquisar:'
+  end
+  object edtPesquisa: TEdit
+    Left = 80
+    Top = 82
+    Width = 239
+    Height = 21
+    TabOrder = 0
+  end
+  object btnPesquisar: TButton
+    Left = 325
+    Top = 78
+    Width = 75
+    Height = 25
+    Caption = 'btnPesquisar'
+    TabOrder = 1
+  end
+  object DBGrid1: TDBGrid
+    Left = 80
+    Top = 109
+    Width = 320
+    Height = 120
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object btnOK: TButton
+    Left = 80
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'btnOK'
+    TabOrder = 3
+  end
+  object btnCancel: TButton
+    Left = 161
+    Top = 248
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 4
+  end
+  object fdqTabela: TFDQuery
+    Connection = dmConexao.conexao
+    Left = 536
+    Top = 160
+  end
+  object dsTabela: TDataSource
+    AutoEdit = False
+    DataSet = fdqTabela
+    Left = 544
+    Top = 216
+  end
+end

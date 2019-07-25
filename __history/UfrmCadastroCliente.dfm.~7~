@@ -1,0 +1,100 @@
+inherited frmCadastroCliente: TfrmCadastroCliente
+  Caption = 'Cadastro de Cliente'
+  ClientWidth = 581
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  ExplicitWidth = 587
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblId: TLabel [0]
+    Left = 56
+    Top = 69
+    Width = 15
+    Height = 13
+    Caption = 'ID:'
+  end
+  object lblNome: TLabel [1]
+    Left = 56
+    Top = 117
+    Width = 31
+    Height = 13
+    Caption = 'Nome:'
+  end
+  object lblCpf: TLabel [2]
+    Left = 56
+    Top = 165
+    Width = 23
+    Height = 13
+    Caption = 'CPF:'
+  end
+  object lblRua: TLabel [3]
+    Left = 56
+    Top = 213
+    Width = 23
+    Height = 13
+    Caption = 'Rua:'
+  end
+  object lblBairro: TLabel [4]
+    Left = 56
+    Top = 261
+    Width = 32
+    Height = 13
+    Caption = 'Bairro:'
+  end
+  inherited GroupBox1: TGroupBox
+    Width = 581
+    ExplicitWidth = 581
+    inherited btnBack: TButton
+      ExplicitLeft = 427
+    end
+    inherited btnLast: TButton
+      ExplicitLeft = 477
+    end
+  end
+  object dbeId: TDBEdit [6]
+    Left = 56
+    Top = 88
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object dbeNome: TDBEdit [7]
+    Left = 56
+    Top = 136
+    Width = 171
+    Height = 21
+    TabOrder = 2
+  end
+  object dbeCpf: TDBEdit [8]
+    Left = 56
+    Top = 184
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object dbeRua: TDBEdit [9]
+    Left = 56
+    Top = 232
+    Width = 246
+    Height = 21
+    TabOrder = 4
+  end
+  object dbeBairro: TDBEdit [10]
+    Left = 56
+    Top = 280
+    Width = 321
+    Height = 21
+    TabOrder = 5
+  end
+  inherited tabela: TFDQuery
+    SQL.Strings = (
+      'select * from CLIENTES')
+    Left = 416
+    Top = 280
+  end
+  inherited dsTabela: TDataSource
+    Left = 464
+    Top = 280
+  end
+end

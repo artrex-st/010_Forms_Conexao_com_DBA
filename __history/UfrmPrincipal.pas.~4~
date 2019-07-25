@@ -1,0 +1,41 @@
+unit UfrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+
+type
+  TfrmPrincipal = class(TForm)
+    mainMenu: TMainMenu;
+    meCadastro: TMenuItem;
+    cliente1: TMenuItem;
+    procedure cliente1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses UfrmCadastroCliente;
+
+procedure TfrmPrincipal.cliente1Click(Sender: TObject);
+begin
+//
+  if not Assigned(frmCadastroCliente) then
+    begin
+      frmCadastroCliente := TfrmCadastroCliente.Create(Self);
+    end;
+    frmCadastroCliente.Show;
+
+end;
+
+end.

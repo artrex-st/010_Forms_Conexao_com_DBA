@@ -1,0 +1,30 @@
+inherited frmCadastroCliente: TfrmCadastroCliente
+  Caption = 'Cadastro de Cliente'
+  ClientWidth = 581
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  ExplicitWidth = 587
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited GroupBox1: TGroupBox
+    Width = 581
+    ExplicitWidth = 581
+    inherited btnDel: TButton
+      ExplicitTop = 18
+    end
+    inherited btnBack: TButton
+      ExplicitLeft = 433
+    end
+    inherited btnNext: TButton
+      Left = 527
+    end
+    inherited btnLast: TButton
+      Left = 477
+    end
+  end
+  inherited tabela: TFDQuery
+    SQL.Strings = (
+      'select * from CLIENTES')
+  end
+end

@@ -1,0 +1,41 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'PRINCIPAL'
+  ClientHeight = 608
+  ClientWidth = 1084
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = mainMenu
+  OldCreateOrder = False
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object mainMenu: TMainMenu
+    Left = 152
+    Top = 304
+    object meCadastro: TMenuItem
+      Caption = 'Cadastro'
+      object cliente1: TMenuItem
+        Caption = 'Cliente'
+        OnClick = cliente1Click
+      end
+      object Produto1: TMenuItem
+        Caption = 'Produto'
+        OnClick = Produto1Click
+      end
+    end
+    object Pesquisa1: TMenuItem
+      Caption = 'Pesquisa'
+      object PesquisarCadastro1: TMenuItem
+        Caption = 'Pesquisar Cadastro'
+        OnClick = PesquisarCadastro1Click
+      end
+    end
+  end
+end

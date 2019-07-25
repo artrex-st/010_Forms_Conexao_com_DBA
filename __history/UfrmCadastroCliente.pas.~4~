@@ -1,0 +1,40 @@
+unit UfrmCadastroCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UfrmCadastroPadrao, Vcl.StdCtrls;
+
+type
+  TfrmCadastroCliente = class(TfrmCadastroPadrao)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormDestroy(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadastroCliente: TfrmCadastroCliente;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadastroCliente.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  inherited;
+  Action:=caFree; // fechar da base
+
+end;
+
+procedure TfrmCadastroCliente.FormDestroy(Sender: TObject);
+begin
+  inherited;
+  frmCadastroCliente:=nil;
+end;
+
+end.

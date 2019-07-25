@@ -1,0 +1,17 @@
+object dmConexao: TdmConexao
+  OldCreateOrder = False
+  Height = 194
+  Width = 332
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=cadastros'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Left = 64
+    Top = 24
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    Left = 64
+    Top = 72
+  end
+end

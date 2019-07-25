@@ -1,0 +1,110 @@
+inherited frmCadastroCliente: TfrmCadastroCliente
+  Caption = 'Cadastro de Cliente'
+  ClientHeight = 366
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  ExplicitHeight = 395
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblId: TLabel [0]
+    Left = 24
+    Top = 61
+    Width = 15
+    Height = 13
+    Caption = 'ID:'
+  end
+  object lblNome: TLabel [1]
+    Left = 24
+    Top = 109
+    Width = 31
+    Height = 13
+    Caption = 'Nome:'
+  end
+  object lblCpf: TLabel [2]
+    Left = 24
+    Top = 155
+    Width = 23
+    Height = 13
+    Caption = 'CPF:'
+  end
+  object lblRua: TLabel [3]
+    Left = 24
+    Top = 201
+    Width = 23
+    Height = 13
+    Caption = 'Rua:'
+  end
+  object lblBairro: TLabel [4]
+    Left = 24
+    Top = 249
+    Width = 32
+    Height = 13
+    Caption = 'Bairro:'
+  end
+  object dbeId: TDBEdit [6]
+    Left = 24
+    Top = 80
+    Width = 121
+    Height = 21
+    DataField = 'ID'
+    DataSource = dsTabela
+    Enabled = False
+    TabOrder = 1
+  end
+  object dbeNome: TDBEdit [7]
+    Left = 24
+    Top = 128
+    Width = 203
+    Height = 21
+    DataField = 'NOME'
+    DataSource = dsTabela
+    MaxLength = 40
+    TabOrder = 2
+  end
+  object dbeCpf: TDBEdit [8]
+    Left = 24
+    Top = 174
+    Width = 121
+    Height = 21
+    DataField = 'CPF'
+    DataSource = dsTabela
+    MaxLength = 16
+    TabOrder = 3
+  end
+  object dbeRua: TDBEdit [9]
+    Left = 24
+    Top = 220
+    Width = 203
+    Height = 21
+    DataField = 'RUA'
+    DataSource = dsTabela
+    MaxLength = 45
+    TabOrder = 4
+  end
+  object dbeBairro: TDBEdit [10]
+    Left = 24
+    Top = 268
+    Width = 203
+    Height = 21
+    DataField = 'BAIRRO'
+    DataSource = dsTabela
+    MaxLength = 40
+    TabOrder = 5
+  end
+  inherited btnPesquisa: TButton
+    TabOrder = 6
+    OnClick = btnPesquisaClick
+  end
+  inherited tabela: TFDQuery
+    SQL.Strings = (
+      'select * from CLIENTES')
+    Left = 480
+    Top = 280
+  end
+  inherited dsTabela: TDataSource
+    Left = 528
+    Top = 280
+  end
+end

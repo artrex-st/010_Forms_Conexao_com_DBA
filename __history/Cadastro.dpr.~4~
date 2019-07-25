@@ -1,0 +1,18 @@
+program Cadastro;
+
+uses
+  Vcl.Forms,
+  UfrmPrincipal in 'UfrmPrincipal.pas' {Form1},
+  UfrmCadastroPadrao in 'UfrmCadastroPadrao.pas' {frmCadastroPadrao},
+  UfrmCadastroCliente in 'UfrmCadastroCliente.pas' {frmCadastroPadrao1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmCadastroPadrao1, frmCadastroPadrao1);
+  Application.CreateForm(TfrmCadastroPadrao1, frmCadastroPadrao1);
+  Application.Run;
+end.
