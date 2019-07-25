@@ -26,12 +26,6 @@ inherited frmCadastroProduto: TfrmCadastroProduto
     Height = 13
     Caption = 'Estoque:'
   end
-  inherited GroupBox1: TGroupBox
-    inherited btnBack: TButton
-      ExplicitLeft = 427
-      ExplicitTop = 15
-    end
-  end
   object dbeId: TDBEdit [4]
     Left = 64
     Top = 112
@@ -40,7 +34,7 @@ inherited frmCadastroProduto: TfrmCadastroProduto
     DataField = 'ID'
     DataSource = dsTabela
     Enabled = False
-    TabOrder = 1
+    TabOrder = 4
   end
   object dbeNome: TDBEdit [5]
     Left = 64
@@ -61,6 +55,9 @@ inherited frmCadastroProduto: TfrmCadastroProduto
     DataSource = dsTabela
     MaxLength = 14
     TabOrder = 3
+  end
+  inherited btnPesquisa: TButton
+    OnClick = btnPesquisaClick
   end
   inherited tabela: TFDQuery
     SQL.Strings = (

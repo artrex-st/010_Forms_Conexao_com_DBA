@@ -22,11 +22,11 @@ type
     dbeRua: TDBEdit;
     lblBairro: TLabel;
     dbeBairro: TDBEdit;
-    btnPesquisa: TButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnPesquisaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,7 +40,20 @@ implementation
 
 {$R *.dfm}
 
-uses UdmConexao;
+uses UdmConexao, UfrmPesquisaCliente;
+
+procedure TfrmCadastroCliente.btnPesquisaClick(Sender: TObject);
+var
+  form : TfrmPesquisaCliente;
+begin
+  inherited;
+  form := TfrmPesquisaCliente.Create(nil);
+  try
+    form.ShowModal;
+  finally
+    form.Free;
+  end;
+end;
 
 procedure TfrmCadastroCliente.FormClose(Sender: TObject;
   var Action: TCloseAction);

@@ -21,6 +21,7 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnPesquisaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,7 +33,21 @@ var
 
 implementation
 
+uses UdmConexao, UfrmPesquisaProduto;
 {$R *.dfm}
+
+procedure TfrmCadastroProduto.btnPesquisaClick(Sender: TObject);
+var
+  form : TfrmPesquisaProduto;
+begin
+  inherited;
+  form := TfrmPesquisaProduto.Create(nil);
+  try
+    form.ShowModal;
+  finally
+    form.Free;
+  end;
+end;
 
 procedure TfrmCadastroProduto.FormClose(Sender: TObject; var Action: TCloseAction);
 begin

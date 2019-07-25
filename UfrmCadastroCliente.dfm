@@ -43,12 +43,6 @@ inherited frmCadastroCliente: TfrmCadastroCliente
     Height = 13
     Caption = 'Bairro:'
   end
-  inherited GroupBox1: TGroupBox
-    inherited btnBack: TButton
-      ExplicitLeft = 427
-      ExplicitTop = 15
-    end
-  end
   object dbeId: TDBEdit [6]
     Left = 24
     Top = 80
@@ -99,13 +93,9 @@ inherited frmCadastroCliente: TfrmCadastroCliente
     MaxLength = 40
     TabOrder = 5
   end
-  object btnPesquisa: TButton [11]
-    Left = 336
-    Top = 104
-    Width = 91
-    Height = 45
-    Caption = 'Pesquisar'
+  inherited btnPesquisa: TButton
     TabOrder = 6
+    OnClick = btnPesquisaClick
   end
   inherited tabela: TFDQuery
     SQL.Strings = (

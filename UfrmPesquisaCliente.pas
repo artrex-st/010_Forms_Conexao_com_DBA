@@ -11,7 +11,7 @@ uses
   Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids;
 
 type
-  TfrmPesquisaPadrao1 = class(TfrmPesquisaPadrao)
+  TfrmPesquisaCliente = class(TfrmPesquisaPadrao)
     procedure btnPesquisarClick(Sender: TObject);
   private
     { Private declarations }
@@ -20,13 +20,13 @@ type
   end;
 
 var
-  frmPesquisaPadrao1: TfrmPesquisaPadrao1;
+  frmPesquisaCliente: TfrmPesquisaCliente;
 
 implementation
 
 {$R *.dfm}
 
-procedure TfrmPesquisaPadrao1.btnPesquisarClick(Sender: TObject);
+procedure TfrmPesquisaCliente.btnPesquisarClick(Sender: TObject);
 begin
   inherited;
   fdqTabela.Close;
