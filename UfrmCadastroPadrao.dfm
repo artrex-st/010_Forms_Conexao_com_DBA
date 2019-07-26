@@ -58,7 +58,6 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Height = 33
       Align = alLeft
       Caption = 'Alterar'
-      HotImageIndex = 3
       ImageIndex = 4
       Images = dmConexao.imIcon
       SelectedImageIndex = 3
@@ -141,7 +140,6 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Width = 50
       Height = 33
       Align = alLeft
-      HotImageIndex = 13
       ImageAlignment = iaCenter
       ImageIndex = 15
       Images = dmConexao.imIcon
@@ -170,6 +168,10 @@ object frmCadastroPadrao: TfrmCadastroPadrao
     Caption = 'Cadastro:'
     Enabled = False
     TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitTop = 56
+    ExplicitWidth = 650
+    ExplicitHeight = 264
   end
   object tabela: TFDQuery
     Connection = dmConexao.conexao
