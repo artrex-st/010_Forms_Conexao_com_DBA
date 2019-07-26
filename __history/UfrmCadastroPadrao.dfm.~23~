@@ -4,8 +4,8 @@ object frmCadastroPadrao: TfrmCadastroPadrao
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'frmCadastroPadrao'
-  ClientHeight = 309
-  ClientWidth = 645
+  ClientHeight = 328
+  ClientWidth = 582
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,89 +20,127 @@ object frmCadastroPadrao: TfrmCadastroPadrao
   object GroupBox1: TGroupBox
     Left = 0
     Top = 0
-    Width = 645
-    Height = 73
+    Width = 582
+    Height = 50
     Align = alTop
     TabOrder = 0
     object btnAdd: TButton
-      Left = 3
-      Top = 24
+      Left = 2
+      Top = 15
       Width = 75
-      Height = 25
+      Height = 33
+      Align = alLeft
       Caption = 'Incluir'
+      ImageIndex = 0
+      Images = dmConexao.imIcon
+      SelectedImageIndex = 13
       TabOrder = 0
       OnClick = btnAddClick
     end
     object btnDel: TButton
-      Left = 84
-      Top = 24
+      Left = 77
+      Top = 15
       Width = 75
-      Height = 25
+      Height = 33
+      Align = alLeft
       Caption = 'Excluir'
+      ImageIndex = 5
+      Images = dmConexao.imIcon
       TabOrder = 1
       OnClick = btnDelClick
     end
     object btnEdit: TButton
-      Left = 165
-      Top = 24
+      Left = 152
+      Top = 15
       Width = 75
-      Height = 25
+      Height = 33
+      Align = alLeft
       Caption = 'Alterar'
+      ImageIndex = 4
+      Images = dmConexao.imIcon
       TabOrder = 2
       OnClick = btnEditClick
     end
-    object btnSalve: TButton
-      Left = 327
-      Top = 24
+    object btnSave: TButton
+      Left = 302
+      Top = 15
       Width = 75
-      Height = 25
+      Height = 33
+      Align = alLeft
       Caption = 'Salvar'
+      ImageIndex = 6
+      Images = dmConexao.imIcon
       TabOrder = 4
-      OnClick = btnSalveClick
+      OnClick = btnSaveClick
     end
     object btnCancel: TButton
-      Left = 246
-      Top = 24
+      Left = 227
+      Top = 15
       Width = 75
-      Height = 25
+      Height = 33
+      Align = alLeft
       Caption = 'Cancelar'
+      ImageIndex = 8
+      Images = dmConexao.imIcon
       TabOrder = 3
       OnClick = btnCancelClick
     end
     object btnFirst: TButton
-      Left = 408
-      Top = 24
+      Left = 377
+      Top = 15
       Width = 50
-      Height = 25
-      Caption = '<<'
+      Height = 33
+      Align = alLeft
+      ImageAlignment = iaCenter
+      ImageIndex = 14
+      Images = dmConexao.imIcon
       TabOrder = 5
       OnClick = btnFirstClick
     end
     object btnBack: TButton
-      Left = 464
-      Top = 24
+      Left = 427
+      Top = 15
       Width = 50
-      Height = 25
-      Caption = '<'
+      Height = 33
+      Align = alLeft
+      ImageAlignment = iaCenter
+      ImageIndex = 16
+      Images = dmConexao.imIcon
       TabOrder = 6
       OnClick = btnBackClick
     end
     object btnNext: TButton
-      Left = 520
-      Top = 24
+      Left = 477
+      Top = 15
       Width = 50
-      Height = 25
-      Caption = '>'
+      Height = 33
+      Align = alLeft
+      ImageAlignment = iaCenter
+      ImageIndex = 17
+      Images = dmConexao.imIcon
       TabOrder = 7
+      OnClick = btnNextClick
     end
     object btnLast: TButton
-      Left = 576
-      Top = 24
+      Left = 527
+      Top = 15
       Width = 50
-      Height = 25
-      Caption = '>>'
+      Height = 33
+      Align = alLeft
+      ImageAlignment = iaCenter
+      ImageIndex = 15
+      Images = dmConexao.imIcon
       TabOrder = 8
+      OnClick = btnLastClick
     end
+  end
+  object btnPesquisa: TButton
+    Left = 477
+    Top = 56
+    Width = 91
+    Height = 45
+    Caption = 'Pesquisar'
+    TabOrder = 1
   end
   object tabela: TFDQuery
     Connection = dmConexao.conexao

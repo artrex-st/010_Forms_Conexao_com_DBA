@@ -57,10 +57,10 @@ begin
       btnAdd.Enabled:=false;
       btnEdit.Enabled:=false;
       btnDel.Enabled:=false;
-      btnNext.Enabled:=false;
-      btnBack.Enabled:=false;
-      btnFirst.Enabled:=false;
-      btnLast.Enabled:=false;
+//      btnNext.Enabled:=false;
+//      btnBack.Enabled:=false;
+//      btnFirst.Enabled:=false;
+//      btnLast.Enabled:=false;
       btnSave.Enabled:=true;
       btnCancel.Enabled:=true;
     end
@@ -69,10 +69,10 @@ begin
           btnAdd.Enabled:=true;
           btnEdit.Enabled:=true;
           btnDel.Enabled:=true;
-          btnNext.Enabled:=true;
-          btnBack.Enabled:=true;
-          btnFirst.Enabled:=true;
-          btnLast.Enabled:=true;
+//          btnNext.Enabled:=true;
+//          btnBack.Enabled:=true;
+//          btnFirst.Enabled:=true;
+//          btnLast.Enabled:=true;
           btnSave.Enabled:=false;
           btnCancel.Enabled:=false;
         end

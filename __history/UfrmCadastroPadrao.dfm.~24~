@@ -98,8 +98,6 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Images = dmConexao.imIcon
       TabOrder = 5
       OnClick = btnFirstClick
-      ExplicitLeft = 371
-      ExplicitTop = 14
     end
     object btnBack: TButton
       Left = 427
