@@ -17,14 +17,13 @@ object frmCadastroPadrao: TfrmCadastroPadrao
   Visible = True
   PixelsPerInch = 96
   TextHeight = 13
-  object GroupBox1: TGroupBox
+  object gbBotoes: TGroupBox
     Left = 0
     Top = 0
     Width = 666
     Height = 50
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 676
     object btnAdd: TButton
       Left = 2
       Top = 15
@@ -32,12 +31,13 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Height = 33
       Align = alLeft
       Caption = 'Incluir'
+      DisabledImageIndex = 0
+      HotImageIndex = 2
       ImageIndex = 0
       Images = dmConexao.imIcon
-      SelectedImageIndex = 13
+      SelectedImageIndex = 2
       TabOrder = 0
       OnClick = btnAddClick
-      ExplicitHeight = 672
     end
     object btnDel: TButton
       Left = 152
@@ -48,10 +48,8 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Caption = 'Excluir'
       ImageIndex = 5
       Images = dmConexao.imIcon
-      TabOrder = 1
+      TabOrder = 2
       OnClick = btnDelClick
-      ExplicitLeft = 271
-      ExplicitTop = 14
     end
     object btnEdit: TButton
       Left = 77
@@ -62,10 +60,9 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Caption = 'Alterar'
       ImageIndex = 4
       Images = dmConexao.imIcon
-      TabOrder = 2
+      SelectedImageIndex = 3
+      TabOrder = 1
       OnClick = btnEditClick
-      ExplicitLeft = 2
-      ExplicitHeight = 672
     end
     object btnSave: TButton
       Left = 227
@@ -77,9 +74,8 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Enabled = False
       ImageIndex = 6
       Images = dmConexao.imIcon
-      TabOrder = 4
+      TabOrder = 3
       OnClick = btnSaveClick
-      ExplicitLeft = 248
     end
     object btnCancel: TButton
       Left = 302
@@ -89,12 +85,12 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Align = alLeft
       Caption = 'Cancelar'
       Enabled = False
+      HotImageIndex = 9
       ImageIndex = 8
       Images = dmConexao.imIcon
-      TabOrder = 3
+      SelectedImageIndex = 9
+      TabOrder = 4
       OnClick = btnCancelClick
-      ExplicitLeft = 346
-      ExplicitTop = 14
     end
     object btnFirst: TButton
       Left = 377
@@ -102,13 +98,13 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Width = 50
       Height = 33
       Align = alLeft
+      HotImageIndex = 12
       ImageAlignment = iaCenter
       ImageIndex = 14
       Images = dmConexao.imIcon
+      SelectedImageIndex = 12
       TabOrder = 5
       OnClick = btnFirstClick
-      ExplicitLeft = 2
-      ExplicitHeight = 672
     end
     object btnBack: TButton
       Left = 427
@@ -116,12 +112,13 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Width = 50
       Height = 33
       Align = alLeft
+      HotImageIndex = 10
       ImageAlignment = iaCenter
       ImageIndex = 16
       Images = dmConexao.imIcon
+      SelectedImageIndex = 10
       TabOrder = 6
       OnClick = btnBackClick
-      ExplicitLeft = 321
     end
     object btnNext: TButton
       Left = 477
@@ -129,12 +126,13 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       Width = 50
       Height = 33
       Align = alLeft
+      HotImageIndex = 11
       ImageAlignment = iaCenter
       ImageIndex = 17
       Images = dmConexao.imIcon
+      SelectedImageIndex = 11
       TabOrder = 7
       OnClick = btnNextClick
-      ExplicitLeft = 327
     end
     object btnLast: TButton
       Left = 527
@@ -145,10 +143,9 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       ImageAlignment = iaCenter
       ImageIndex = 15
       Images = dmConexao.imIcon
+      SelectedImageIndex = 13
       TabOrder = 8
       OnClick = btnLastClick
-      ExplicitLeft = 2
-      ExplicitHeight = 672
     end
     object btnPesquisa: TButton
       Left = 582
@@ -160,9 +157,21 @@ object frmCadastroPadrao: TfrmCadastroPadrao
       ImageIndex = 18
       Images = dmConexao.imIcon
       TabOrder = 9
-      ExplicitLeft = 591
-      ExplicitTop = 14
     end
+  end
+  object gbCampos: TGroupBox
+    Left = 0
+    Top = 50
+    Width = 666
+    Height = 278
+    Align = alClient
+    Caption = 'Cadastro:'
+    Enabled = False
+    TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitTop = 56
+    ExplicitWidth = 650
+    ExplicitHeight = 264
   end
   object tabela: TFDQuery
     Connection = dmConexao.conexao

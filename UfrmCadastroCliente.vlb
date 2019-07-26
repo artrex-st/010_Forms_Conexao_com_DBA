@@ -26,9 +26,6 @@ Coordinates=181,78,57,58
 [btnDel]
 Coordinates=10,146,52,58
 
-[GroupBox1]
-Coordinates=10,78,79,58
-
 [btnFirst]
 Coordinates=10,10,58,58
 
@@ -37,4 +34,7 @@ Coordinates=210,269,52,36
 
 [btnSave]
 Coordinates=78,10,65,58
+
+[gbBotoes]
+Coordinates=10,78,79,58
 

@@ -12,7 +12,7 @@ uses
 
 type
   TfrmCadastroPadrao = class(TForm)
-    GroupBox1: TGroupBox;
+    gbBotoes: TGroupBox;
     btnAdd: TButton;
     btnDel: TButton;
     btnEdit: TButton;
@@ -25,6 +25,7 @@ type
     tabela: TFDQuery;
     dsTabela: TDataSource;
     btnPesquisa: TButton;
+    gbCampos: TGroupBox;
     procedure btnAddClick(Sender: TObject);
     procedure btnDelClick(Sender: TObject);
     procedure btnEditClick(Sender: TObject);
@@ -63,6 +64,7 @@ begin
       btnLast.Enabled:=false;
       btnSave.Enabled:=true;
       btnCancel.Enabled:=true;
+      gbCampos.Enabled:=true;
     end
       else
         begin
@@ -75,6 +77,7 @@ begin
           btnLast.Enabled:=true;
           btnSave.Enabled:=false;
           btnCancel.Enabled:=false;
+          gbCampos.Enabled:=false;
         end
 end;
 
