@@ -12,6 +12,7 @@ uses
 
 type
   TfrmPesquisaCliente = class(TfrmPesquisaPadrao)
+    cbCampo: TComboBox;
     procedure btnPesquisarClick(Sender: TObject);
   private
     { Private declarations }
@@ -27,11 +28,13 @@ implementation
 {$R *.dfm}
 
 procedure TfrmPesquisaCliente.btnPesquisarClick(Sender: TObject);
+var campo:string;
 begin
   inherited;
+  campo := cbCampo.Text;
   fdqTabela.Close;
   fdqTabela.SQL.Clear;
-  fdqTabela.SQL.Add('select * from clientes where NOME like :pesq');
+  fdqTabela.SQL.Add('select * from clientes where '+campo+' like :pesq');
   fdqTabela.ParamByName('pesq').AsString:=edtPesquisa.Text+'%';
   fdqTabela.Open();
 end;
